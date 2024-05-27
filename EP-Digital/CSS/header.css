@@ -1,0 +1,133 @@
+/* HEADER */
+
+.site-header {
+    width:100%;
+    height: 80px;
+    box-shadow: 0px 4px 14px 10px #00000008;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .global-header {
+    max-width: 1148px;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+
+  
+  /* MENU */
+  
+  .primary-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  
+  }
+  
+  .primary-menu .menu-item {
+    margin-left: 45px;
+  }
+  
+  .menu-item a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+/* DEBUT CSS MENU MOBILE */ 
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-toggle .close-icon {
+    display: none;
+}
+
+.menu-toggle.open .burger-icon {
+    display: none;
+}
+
+.menu-toggle.open .close-icon {
+    display: inline;
+}
+
+
+.mobile-menu {
+    display: none;
+    background-color: red;
+    position: absolute; /* Positionne le menu par rapport au conteneur parent */
+    top: 72px; /* Positionne le menu à 72px du haut du conteneur parent */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 72px); /*calc(100% - 72px); /* Ajuste la hauteur en conséquence */
+    z-index: 1000;
+    padding-top: 20px;
+    text-align: center;
+    
+
+}
+
+#primary-menu-mobile a {
+    font-family: Space Mono;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 65.16px;
+    text-align: center;
+    color:white;
+
+}
+
+.mobile-menu .primary-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.mobile-menu .primary-menu li {
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 730px) {
+    .primary-menu-container {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .site-header {
+        height: 72px;
+        box-shadow: 0px 4px 4px 0px #00000017;
+
+      }
+
+}

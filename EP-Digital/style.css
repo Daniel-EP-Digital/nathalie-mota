@@ -9,3 +9,110 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mon-theme
 */
+
+/* import de mes autres feuilles CSS du dossier "CSS" */
+
+@import url("CSS/modale-contact.css");
+@import url("CSS/header.css");
+
+
+
+
+body {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin:0px;
+}
+
+
+/* FOOTER */
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 7px 0px;
+  border-top: solid 1px #000000;
+  width:100vw;
+}
+
+.footer-menu .menu-item {
+  margin: 0px 43px;
+}
+
+@media screen and (max-width: 730px) { 
+  .footer-menu {
+flex-direction:column;
+align-items: center;
+padding: 44px 20px;
+row-gap: 24px;
+}
+}
+
+
+
+
+
+/* AJOUT FONTS A SUPPRIMER FIN */
+
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+/* FIN FONTS A SUPPRIMER FIN */
+
+
+
+.menu-item {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+}

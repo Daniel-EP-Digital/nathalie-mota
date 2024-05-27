@@ -1,0 +1,156 @@
+#modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Noir avec transparence */
+    z-index: 2000; /* S'assure que l'overlay est au-dessus des autres éléments de la page */
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+  }
+  
+  .contact-header {
+    position: relative; /* Conteneur pour le texte répété */
+    overflow: hidden; /* Cache le contenu qui dépasse du conteneur */
+    height: 50px; /* Ou la hauteur désirée pour les deux lignes de texte */
+    line-height: 50px; 
+  }
+  
+  .contact-header:before {
+    content: "ContactContactContactContactContactContactContact "; /* Texte répété suffisamment de fois */
+    position: absolute;
+    white-space: nowrap; /* Empêche le retour à la ligne du texte */
+    top: 0;
+    left: 50%; /* Commence au milieu du conteneur */
+    transform: translateX(-50%); /* Centrage précis du contenu */
+    font-size: 48px; /* Ou la taille de police désirée */
+    letter-spacing: 0px; /* Espacement entre les lettres si nécessaire */
+    color: #000; /* Couleur du texte */
+    font-family: Space Mono;
+    text-transform: uppercase;
+    font-style: italic;
+    
+    
+  }
+  
+  
+  #contactModal {
+    background: #FFFFFF; /* Couleur de fond du bloc de formulaire */
+    border: 5px solid #000000; /* Bordure noire */
+    width: 597px; /* Largeur du bloc de formulaire */
+    padding: 18px 0px 36px 0px; /* Espacement à l'intérieur du bloc de formulaire */
+    box-sizing: border-box; /* Pour inclure la bordure dans la largeur totale */
+    position: relative; /* Position relative pour le positionnement des enfants */
+    position: relative;
+    z-index: 2001;
+  }
+  
+  #contactModal .wpcf7-form {
+    max-width: 263px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 45px 24px 0px 24px;
+  
+  }
+  
+  #contactModal .wpcf7-form-control.wpcf7-textarea,#contactModal .wpcf7-text {
+    width: 100%;
+    max-width: 100%;
+    line-height: 1.5; 
+    border: 1px solid #B8BBC2;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  #contactModal .wpcf7-form-control.wpcf7-textarea {
+    height: 196px;
+    max-height: 196px;
+   }
+  
+  
+  #contactModal.wpcf7-form-control-wrap {
+   padding-bottom:4px;
+  }
+  
+  
+  .wpcf7 {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  #contactModal .wpcf7-submit {
+    background: #D8D8D8;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.77px;
+    text-align: center;
+    width:100%;
+    padding: 8px 15px 8px 15px;
+    border-radius: 2px 0px 0px 0px;
+    height:50px;
+
+  }
+  
+  #contactModal .wpcf7-submit p {
+    width:100%;
+  }
+  
+  #contactModal .wpcf7-spinner {
+    display: none;
+  }
+  
+  #contactModal label {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #313144;
+    text-transform: uppercase;
+  
+  }
+
+  .wpcf7-form-control-wrap {
+    display:flex;
+    width:100%;
+  }
+
+  @media screen and (max-width: 730px) {
+        /* Modale CSS pour les écrans mobiles */
+        #contactModal {
+max-height:583px;
+          margin: 40px; /* Marge de 40 pixels tout autour */
+      }
+
+      #modalOverlay {
+          display: flex;
+          justify-content: center; /* Centre horizontalement */
+          align-items: center; /* Centre verticalement */
+      }
+      #contactModal .wpcf7-form {
+        padding: 0px 12px 0px 12px;
+      }
+      .contact-header {
+      height: 25px;
+    line-height: 25px;
+  }
+  .contact-header:before {
+    font-size: 24.92px;
+  }
+  #contactModal .wpcf7-form-control.wpcf7-textarea {
+    height: 126px;
+    max-height: 126px;
+   }
+
+}
+    
+  
+ 
