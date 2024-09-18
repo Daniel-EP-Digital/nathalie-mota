@@ -1,0 +1,222 @@
+/* SINGLE-PHOTO.PHP */
+
+
+/* Styles pour le template single-photo */
+
+.title-single-photo {
+font-family: 'Space Mono', monospace;
+font-size: 66px;
+font-style: italic;
+text-transform: uppercase;
+font-weight: 400;
+line-height: 58px;
+text-align: left;
+
+}
+
+.left-column,.right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  justify-content: flex-end;
+}
+
+.single-photo-template {
+    max-width: 1200px;
+    border-bottom: 1px solid black;
+    padding: 0px 0px 20px 0px;
+    margin: 30px 80px 20px 80px;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+  }
+  
+  .photo-header {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  
+  }
+  .photo-meta {
+    margin-bottom:17px;
+  }
+  
+  .photo-meta p {
+    color: #333;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.73px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 20px 0px 20px 0px;
+  }
+  
+  .photo-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .photo-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 844px;
+  }
+  
+  .photo-contact {
+    border-top: 1px solid black;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .photo-contact p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: right;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  .related-photos {
+    max-width: 1200px;
+    padding: 20px 80px;
+  }
+  
+  .related-photos h2 {
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.66px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-transform: uppercase;
+    
+  }
+  
+  .related-photos-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .related-photo {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    
+  }
+  
+  .related-photo img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .related-photo h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: #000;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    margin-top: 50px;
+  }
+  
+  .footer p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* STYLE POUR NAVIGATION */ 
+  
+  .navigation-photos {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .nav-photo {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .nav-photo .nav-arrow {
+    font-size: 24px;
+  }
+  
+  .nav-photo .nav-thumbnail {
+    display: none;
+    position: absolute;
+    top: -70px; /* Adjust the position as needed */
+    right: 0; /* Adjust for left or right positioning */
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 5px;
+  }
+  
+  .nav-photo:hover .nav-thumbnail {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .single-photo-template {
+      flex-direction: column-reverse;
+      margin: 20px 0px 0px 0px;
+    }
+    .related-photos {
+      padding: 20px 32px;
+  }
+  .photo-header,.right-column {
+    margin:0px 56px; 
+  }
+  .navigation-photos {
+    display:none;
+  }
+  .title-single-photo {
+    font-size: 46px;
+    line-height: 46px;
+    margin:0px;
+  }
+  .related-photos h2 {
+    display:flex;
+    justify-content: center;
+  }
+  .photo-contact p,.openContactModal {
+    display:flex;
+    flex-direction: column;
+    margin:0px 56px;
+    width:100%;
+    align-items: flex-start;
+  }
+}
+  
+  /* END SINGLE-PHOTO.PHP */
+  

@@ -1,0 +1,65 @@
+.fancybox-button--arrow_left:after,
+.fancybox-button--arrow_right:after {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.77px;
+    text-align: left;
+    color: #FFFFFF; /* couleur du texte blanc */
+    content: attr(title); /* Utilise l'attribut title comme contenu */
+    padding: 0px 0px 0px 5px; /* Ajuste l'espacement autour du texte */
+    position: absolute; /* Permet de positionner l'élément après */
+    top: 50%; /* Positionner l'élément à 50% de la hauteur du conteneur */
+    transform: translateY(-50%); /* Centrer l'élément verticalement */
+}
+
+.fancybox-button--arrow_left:after {
+    padding-left:40px;
+}
+.fancybox-button--arrow_right:after {
+    margin-left:-100px;
+}
+
+.fancybox-button--arrow_left {
+    left: 20px; /* ajustement de la position gauche */
+    display: flex;
+    align-items: center;
+}
+
+.fancybox-button--arrow_right {
+    right: 20px; /* ajustement de la position droite */
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Styles pour la référence et la catégorie */
+.fancybox-caption__body span,
+.fancybox-caption__body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+/* Styles pour les boutons "Suivant" et "Précédent" */
+.fancybox-button--arrow_left span,
+.fancybox-button--arrow_right span {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.77px;
+    text-align: left;
+}
+
+/* Optionnel: Ajuster la position des flèches pour mieux correspondre à l'alignement */
+.fancybox-button--arrow_left,
+.fancybox-button--arrow_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

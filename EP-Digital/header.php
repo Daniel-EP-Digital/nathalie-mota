@@ -37,25 +37,23 @@
                 }
             ?>
         </div>
-            <!-- Bouton menu burger -->
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                <span class="burger-icon">&#9776;</span>
-                <span class="close-icon" style="display: none;">&times;</span>
-            </button>
+        <!-- Bouton menu burger -->
+        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+            <span class="burger-icon">&#9776;</span>
+            <span class="close-icon" >&times;</span>
+        </button>
         <!-- Conteneur pour le menu mobile -->
-
-            <nav id="mobile-menu" class="mobile-menu">
-                <?php
-                    wp_nav_menu( array(
-                        'theme_location' => 'primary',
-                        'menu_id'        => 'primary-menu-mobile',
-                        'container'      => false,
-                        'menu_class'     => 'primary-menu',
-                    ) );
-                ?>
-            </nav>
-
-    </div>
+        <nav id="mobile-menu-container" class="mobile-menu">
+            <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'primary',
+                    'menu_id'        => 'primary-menu-mobile',
+                    'container'      => false,
+                    'menu_class'     => 'primary-menu',
+                ) );
+            ?>
+        </nav>
+        </div>
 
 </header>
 

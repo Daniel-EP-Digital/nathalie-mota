@@ -1,0 +1,60 @@
+/* index.PHP */
+
+
+/* Styles pour la page d'accueil */
+
+.hero-section-home {
+    width:100vw;
+    aspect-ratio: 1440 / 980;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-image: url("http://nathalie-mota.local/wp-content/uploads/2024/08/nathalie-11.jpeg.jpg");
+    background-size: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-home h1 {
+font-family: Space Mono;
+font-size: 8vw;
+font-style: italic;
+font-weight: 700;
+line-height: 142.18px;
+text-align: center;
+-webkit-text-stroke: 0.03em #ffffff;
+-webkit-text-fill-color: transparent;
+/* fallback */
+color: #333;
+
+}
+
+.catalogue-item-photo {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:80px;
+}
+
+.photo-catalog {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    grid-gap: 20px; /* Espacement entre les éléments */
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+}
